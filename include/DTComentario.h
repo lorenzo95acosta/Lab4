@@ -1,5 +1,6 @@
 #ifndef _DTCOMENTARIO_H_
 #define _DTCOMENTARIO_H_
+using namespace std;
 
 #include "DTFecha.h"
 

@@ -1,5 +1,6 @@
 #ifndef _DTUSUARIO_H_
 #define _DTUSUARIO_H_
+using namespace std;
 
 #include "DTFecha.h"
 
