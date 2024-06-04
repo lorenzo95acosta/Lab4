@@ -5,7 +5,7 @@
 
 class DTComentario{
 private:
-	int texto;
+	string texto;
 	DTFecha fecha;
 };
 
