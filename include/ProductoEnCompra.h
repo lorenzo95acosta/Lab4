@@ -9,6 +9,7 @@ class ProductoEnCompra {
   private:
     int cantidadProducto;
     float precioTotal;
+		Compra *compra;
   public:
 		//constructores
 		ProductoEnCompra(int cantidadProducto, float precioTotal);
@@ -16,7 +17,8 @@ class ProductoEnCompra {
 		//getters
 		int getCantProd();
 		float getPrecioTotal();
-		
+		Compra getCompra();
+
 		//funciones
     void LinkPC_C(Compra c);
 

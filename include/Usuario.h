@@ -13,11 +13,13 @@ class Usuario{
     string nickname;
     DTFecha nacimiento;
     string contraseña;
+    set<Comentario> *comentarios;
   public:
     //getters
     virtual string getNick() = 0;
     virtual DTFecha getNacimiento() = 0;
     virtual string getContraseña() = 0;
+    virtual set<Comentario> getComentarios() = 0;
 
     //funciones
     virtual set<DTComentario> listarComentarios() = 0;

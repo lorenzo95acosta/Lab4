@@ -8,12 +8,14 @@ using namespace std;
 class PromocionProducto {
   private:
     int minimoAComprar;
+		Producto *producto;
   public:
 		//constructores
 		PromocionProducto(int minimoAComprar);
 
 		//getters
 		int getMinAComprar();
+		Producto getProducto();
 		
 		//funciones
     void LinkPP_P(Producto p);

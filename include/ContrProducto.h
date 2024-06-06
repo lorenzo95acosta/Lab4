@@ -3,10 +3,20 @@
 
 #include <stdio.h>
 #include "interfaces.h"
+#include "Producto.h"
+#include "Promocion.h"
+#include "ProductoEnCompra.h"
+#include "Compra.h"
+#include "PromocionProducto.h"
 
 using namespace std;
 
 class ContrProducto: public IConsultarProducto, public ICrearPromocion, public IConsultarPromocion, public IRealizarCompra, public IEnviarProducto{
+  private:
+    set<Promocion> *promociones;
+    set<Producto> *productos;
+    ProductoEnCompra *prodEnCompra;
+    Compra *compra;
   public:
     IDProducto listadoIDProductos();
     DTProducto mostrarProducto(string);

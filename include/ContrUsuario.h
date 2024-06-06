@@ -2,11 +2,17 @@
 #define _CONTRUSUARIO_H_
 
 #include <stdio.h>
+#include <set>
+#include "Usuario.h"
+#include "Comentario.h"
 #include "interfaces.h"
 
 using namespace std;
 
 class ContrUsuario: public IAltaListadoUsuario, public IDejarComentario, public IEliminarComentario, public IExpedienteUsuario, public INotificaciones{
+  private:
+    set<Usuario> *usuarios;
+    set<Comentario> *comentarios;
   public:
     void nuevoUsuario(DTUsuario);
     DTInfoUsuarios listadoUsuarios();

@@ -4,6 +4,7 @@
 using namespace std;
 
 #include <iostream>
+#include <set>
 #include "DTCategoria.h"
 #include "ProductoEnCompra.h"
 
@@ -15,6 +16,7 @@ class Producto{
     float precio;
     int stock;
     string codigo;
+    set<ProductoEnCompra> *prodEnCompra;
   public:
     //constructores
     Producto(string nombre, string descripcion, DTCategoria categoria, float precio, int stock, string codigo);
@@ -26,6 +28,7 @@ class Producto{
     float getPrecio();
     int getStock();
     string getCodigo();
+    set<ProductoEnCompra> getProdEnCompra();
 
     //funciones
     bool prodEnProm();

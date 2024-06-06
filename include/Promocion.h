@@ -4,7 +4,9 @@
 using namespace std;
 
 #include <iostream>
+#include <set>
 #include "DTFecha.h"
+#include "PromocionProducto.h"
 
 class Promocion{
   private:
@@ -12,6 +14,7 @@ class Promocion{
     string descripcion;
     DTFecha vencimiento;
     float descuento;
+    set<PromocionProducto> *promocionProductos;
   public:
     //constructores
     Promocion(string nombre, string descripcion, DTFecha vencimiento, float descuento);
@@ -21,6 +24,7 @@ class Promocion{
     string getDescripcion();
     DTFecha getVenc();
     float getDescuento();
+    set<PromocionProducto> getPromocionProductos();
 
     //funciones
     bool checkProm();
