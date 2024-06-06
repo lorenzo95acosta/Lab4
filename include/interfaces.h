@@ -35,7 +35,7 @@ class IAltaProducto {
 
 class IConsultarProducto {
   public:
-    virtual IDProducto listadoProductos() = 0;
+    virtual IDProducto listadoIDProductos() = 0;
     virtual DTProducto mostrarProducto(string) = 0;
     virtual ~IConsultarProducto(){};
 };
@@ -71,9 +71,9 @@ class IRealizarCompra {
 
 class IDejarComentario {
   public:
-    virtual string listadoUsuarios() = 0;
+    virtual string listadoUsuariosNick() = 0;
     virtual void seleccionarUsuario(string) = 0;
-    virtual string listadoProductos() = 0;
+    virtual string listadoCodigoProductos() = 0;
     virtual void seleccionarProducto(string) = 0;
     virtual void nuevoComentario(string) = 0;
     virtual void seleccionarComentario(DTComentario) = 0;
@@ -83,7 +83,7 @@ class IDejarComentario {
 
 class IEliminarComentario {
   public:
-    virtual string listadoUsuarios() = 0;
+    virtual string listadoUsuariosNick() = 0;
     virtual void seleccionarUsuario(string) = 0;
     virtual DTComentario listarComentarios() = 0;
     virtual void seleccionarComentario(DTComentario) = 0;
@@ -95,7 +95,7 @@ class IEnviarProducto {
   public: 
     virtual string listadoVendedores() = 0;
     virtual void seleccionarVendedor(string) = 0;
-    virtual string listadoProductos() = 0;
+    virtual string listadoCodigoProductos() = 0;
     virtual void seleccionarProducto(string) = 0;
     virtual listaPares listadoCompras() = 0;
     virtual void seleccionarCompra(listaPares) = 0;
@@ -105,7 +105,7 @@ class IEnviarProducto {
 
 class IExpedienteUsuario {
   public:
-    virtual string listadoUsuarios() = 0;
+    virtual string listadoUsuariosNick() = 0;
     virtual void seleccionarUsuario(string) = 0;
     virtual DTInfoUsuarios listarInfoUsuario() = 0;
     virtual ~IExpedienteUsuario(){};
