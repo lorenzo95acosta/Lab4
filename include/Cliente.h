@@ -6,6 +6,8 @@ using namespace std;
 #include "Usuario.h"
 #include "DTNotificacion.h"
 
+class Vendedor;
+
 class Cliente: public Usuario{
   private:
     string nickname;
@@ -39,5 +41,7 @@ class Cliente: public Usuario{
     //destructor
     ~Cliente();
 };
+
+#include "Vendedor.h"
 
 #endif

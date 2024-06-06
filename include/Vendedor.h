@@ -6,6 +6,7 @@ using namespace std;
 #include "Usuario.h"
 #include "DTNotificacion.h"
 #include "DTProducto.h"
+#include "Cliente.h"
 
 class Vendedor: public Usuario{
   private:
