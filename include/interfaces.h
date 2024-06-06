@@ -2,6 +2,18 @@
 #define _INTERFACES_H
 
 #include <iostream>
+#include "DTCategoria.h"
+#include "DTComentario.h"
+#include "DTCompra.h"
+#include "DTFecha.h"
+#include "DTInfoProd.h"
+#include "DTUsuario.h"
+#include "DTInfoUsuarios.h"
+#include "DTListaPares.h"
+#include "DTNotificacion.h"
+#include "DTProducto.h"
+#include "DTPromo.h"
+#include "IDProducto.h"
 
 using namespace std;
 
@@ -85,8 +97,8 @@ class IEnviarProducto {
     virtual void seleccionarVendedor(string) = 0;
     virtual string listadoProductos() = 0;
     virtual void seleccionarProducto(string) = 0;
-    virtual ListaPares listadoCompras() = 0;
-    virtual void seleccionarCompra(ListaPares) = 0;
+    virtual listaPares listadoCompras() = 0;
+    virtual void seleccionarCompra(listaPares) = 0;
     virtual void marcarEnviado() = 0;
     virtual ~IEnviarProducto(){};
 };
@@ -95,7 +107,7 @@ class IExpedienteUsuario {
   public:
     virtual string listadoUsuarios() = 0;
     virtual void seleccionarUsuario(string) = 0;
-    virtual DTInfoUsuario listarInfoUsuario() = 0;
+    virtual DTInfoUsuarios listarInfoUsuario() = 0;
     virtual ~IExpedienteUsuario(){};
 };
 
@@ -107,7 +119,6 @@ class INotificaciones {
     virtual DTNotificacion listarNotificacionesRecibidas(string) = 0;
     virtual void eliminarNotificaciones(string) = 0;
     virtual string listarSuscripcionesVend(string) = 0;
-    virtual void seleccionarVendedor(string) = 0;
     virtual void eliminarSuscripciones(string) = 0;
     virtual ~INotificaciones(){};
 };

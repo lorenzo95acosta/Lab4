@@ -5,7 +5,8 @@ using namespace std;
 
 #include <iostream>
 #include "DTFecha.h"
-#include "Usuario.h"
+
+class Usuario;
 
 class Comentario{
   private:
@@ -27,5 +28,7 @@ class Comentario{
     //destructor
     ~Comentario();
 };
+
+#include "Usuario.h"
 
 #endif

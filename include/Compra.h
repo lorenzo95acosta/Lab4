@@ -12,7 +12,7 @@ class Compra {
     float montoFinal;
 	public:
 		//constructor
-		Compra(DTFecha fechaDeCompra, bool false, float montoFinal);
+		Compra(DTFecha fechaDeCompra,bool productoEnviado, float montoFinal);
 
 		//getters
 		DTFecha getFechaCompra();
@@ -23,3 +23,4 @@ class Compra {
 		~Compra();
 };
 
+#endif

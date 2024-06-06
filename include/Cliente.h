@@ -5,6 +5,9 @@ using namespace std;
 
 #include "Usuario.h"
 #include "DTNotificacion.h"
+#include "DTComentario.h"
+#include "Comentario.h"
+#include "Promocion.h"
 
 class Vendedor;
 

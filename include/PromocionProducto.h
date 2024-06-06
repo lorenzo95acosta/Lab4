@@ -22,3 +22,5 @@ class PromocionProducto {
 		//destructor
 		~PromocionProducto();
 };
+
+#endif

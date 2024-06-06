@@ -5,6 +5,7 @@ using namespace std;
 
 #include "DTFecha.h"
 #include "DTComentario.h"
+#include "Comentario.h"
 #include <set>
 
 class Usuario{

@@ -5,7 +5,7 @@ using namespace std;
 
 #include <iostream>
 #include "DTCategoria.h"
-#include "ProducroEnCompra.h"
+#include "ProductoEnCompra.h"
 
 class Producto{
   private:
