@@ -36,7 +36,10 @@ void main_eliminarSuscripcion();
 
 
 void leerChars(char* cs);
-void leerRestoLinea(char* cs);
+
+void main_altaUsuario(){
+	cout<<"altaUsuario"<<endl;
+}
 
 
 int main(){
@@ -60,9 +63,10 @@ int main(){
             leerRestoLinea(restoLinea);
             printf("# %s.\n", restoLinea);
 
-        } else if (cmd_es("caso", cmd)) {
-            main_caso();
+        } else if (cmd_es("altaUsuario", cmd)) {
+            main_altaUsuario();
 		}
+		fgets(restoLinea, MAX_LINEA + 1, stdin);
 	}
 
 ///////////////////////////////////////////////////////
