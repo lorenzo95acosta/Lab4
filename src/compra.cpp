@@ -18,7 +18,7 @@ void Compra::agregarProductoEnCompra(ProductoEnCompra* prodEnCompraAgregar){
 }
 
 void Compra::mostrar(){
-	cout<<"Se mostraran lso productose en compra"<<endl<<endl;
+	cout<<"Se mostraran los productose en compra"<<endl<<endl;
 	for(ProductoEnCompra* prodEnComp: listaProductosCompra){
 		prodEnComp->mostrar();
 	}
