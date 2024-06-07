@@ -16,6 +16,9 @@ using namespace std;
 
 
 //Se agregan funciones para realizar los casos de prueba en el main
+#define MAX_PALABRA 32
+#define MAX_LINEA 256
+
 char restoLinea[MAX_LINEA + 1];
 char cmd[MAX_PALABRA];
 
@@ -39,7 +42,58 @@ void leerChars(char* cs);
 
 void main_altaUsuario(){
 	cout<<"altaUsuario"<<endl;
-}
+};
+
+void main_listadoUsuario(){
+	cout<<"listadoUsuario"<<endl;
+};
+
+void main_altaProducto(){
+	cout<<"altaProducto"<<endl;
+};
+
+void main_consultarProducto(){
+	cout<<"consultarProducto"<<endl;
+};
+void main_crearPromocion(){
+	cout<<"crearPromocion"<<endl;
+};
+
+void main_constultarPromocion(){
+	cout<<"constultarPromocion"<<endl;
+};
+
+void main_realizarCompra(){
+	cout<<"realizarCompra"<<endl;
+};
+
+void main_dejarComentario(){
+	cout<<"dejarComentario"<<endl;
+};
+
+void main_eliminarComentario(){
+	cout<<"eliminarComentario"<<endl;
+};
+
+void main_enviarProducto(){
+	cout<<"enviarProducto"<<endl;
+};
+
+void main_expedienteUsuario(){
+	cout<<"expedienteUsuario"<<endl;
+};
+
+void main_suscribirNotificacion(){
+	cout<<"suscribirNotificacion"<<endl;
+};
+
+void main_consultaNotificacion(){
+	cout<<"consultaNotificacion"<<endl;
+};
+
+void main_eliminarSuscripcion(){
+	cout<<"eliminarSuscripcion"<<endl;
+};
 
 
 int main(){
@@ -65,6 +119,45 @@ int main(){
 
         } else if (cmd_es("altaUsuario", cmd)) {
             main_altaUsuario();
+
+		} else if (cmd_es("listadoUsuario", cmd)) {
+            main_listadoUsuario();
+
+		} else if (cmd_es("altaProducto", cmd)) {
+            main_altaProducto();
+
+		} else if (cmd_es("consultarProducto", cmd)) {
+            main_consultarProducto();
+
+		} else if (cmd_es("crearPromocion", cmd)) {
+            main_crearPromocion();
+
+		} else if (cmd_es("constultarPromocion", cmd)) {
+            main_constultarPromocion();
+
+		} else if (cmd_es("realizarCompra", cmd)) {
+            main_realizarCompra();
+
+		} else if (cmd_es("dejarComentario", cmd)) {
+            main_dejarComentario();
+
+		} else if (cmd_es("eliminarComentario", cmd)) {
+            main_eliminarComentario();
+
+		} else if (cmd_es("enviarProducto", cmd)) {
+            main_enviarProducto();
+
+		} else if (cmd_es("expedienteUsuario", cmd)) {
+            main_expedienteUsuario();
+
+		} else if (cmd_es("suscribirNotificacison", cmd)) {
+            main_suscribirNotificacison();
+
+		} else if (cmd_es("consultaNotificacion", cmd)) {
+            main_consultaNotificacion();
+
+		} else if (cmd_es("eliminarSuscripcion", cmd)) {
+            main_eliminarSuscripcion();
 		}
 		fgets(restoLinea, MAX_LINEA + 1, stdin);
 	}
