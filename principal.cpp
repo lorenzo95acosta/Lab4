@@ -14,10 +14,58 @@
 
 using namespace std;
 
+
+//Se agregan funciones para realizar los casos de prueba en el main
+char restoLinea[MAX_LINEA + 1];
+char cmd[MAX_PALABRA];
+
+void main_altaUsuario();
+void main_listadoUsuario();
+void main_altaProducto();
+void main_consultarProducto();
+void main_crearPromocion();
+void main_constultarPromocion();
+void main_realizarCompra();
+void main_dejarComentario();
+void main_eliminarComentario();
+void main_enviarProducto();
+void main_expedienteUsuario();
+void main_suscribirNotificacion();
+void main_consultaNotificacion();
+void main_eliminarSuscripcion();
+
+
+void leerChars(char* cs);
+void leerRestoLinea(char* cs);
+
+
 int main(){
 	DTFecha  f =  DTFecha(4,6,24);
 	DTFecha  f2 =  DTFecha(5,6,24);
 
+///////////////////////////////////////////////////////
+//Prueba Menu interactivo
+	int cont_comandos = 0;
+    bool seguir = true;
+
+    while (seguir){
+		cont_comandos++;
+        printf("%u>", cont_comandos);
+
+		if (cmd_es("Fin", cmd)) {  // Termina el programa
+            seguir = false;
+            printf("Fin.\n");
+
+        } else if (cmd_es("#", cmd)) {  // Imprime el comentario luego del #
+            leerRestoLinea(restoLinea);
+            printf("# %s.\n", restoLinea);
+
+        } else if (cmd_es("caso", cmd)) {
+            main_caso();
+		}
+	}
+
+///////////////////////////////////////////////////////
 
 	// Productos [NombreProducto,Descripcion,Categoria,Precio,Stock,Codigo,TienePromocion?]
 	cout<<"Cracion de Productos"<<endl;
