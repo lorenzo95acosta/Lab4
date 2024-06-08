@@ -1,15 +1,11 @@
 #include "../include/datatype/DTCliente.h"
+#include "../include/datatype/DTUsuario.h"
+#include "../include/datatype/DTNotificacion.h"
 
 #include <iostream>
 #include <string>
 
 using namespace std;
-
-DTCliente::DTCliente(){
-    direccion = "";
-    ciudad = "";
-    notificacion = null;
-}
 
 DTCliente::DTCliente(string _direccion, string _ciudad, DTNotificacion _notificacion){
     direccion = _direccion;

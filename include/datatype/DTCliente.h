@@ -11,7 +11,6 @@ private:
     string ciudad;
     DTNotificacion notification;
 public:
-	DTCliente();
 	DTCliente(string,string,DTNotificacion);
 	string getDireccion();
 	string getCiudad();
