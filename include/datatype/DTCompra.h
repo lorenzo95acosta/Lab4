@@ -8,10 +8,15 @@ using namespace std;
 #include <set>
 
 class DTCompra{
-  private:;
+  private:
 	  float montoFinal;
 	  DTFecha fecha;
     set<DTInfoProd> infoProd;
+  public
+    DTCompra();
+    float getMontoFinal();
+    DTFecha getFecha();
+    void listarProductosEnCompra();
 };
 
 #endif
