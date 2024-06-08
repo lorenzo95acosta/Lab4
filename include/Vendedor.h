@@ -6,11 +6,6 @@ using namespace std;
 #include "Usuario.h"
 #include "DTNotificacion.h"
 #include "DTProducto.h"
-#include "Cliente.h"
-#include "DTComentario.h"
-#include "Comentario.h"
-#include "Promocion.h"
-#include "Producto.h"
 
 class Vendedor: public Usuario{
   private:
@@ -18,18 +13,12 @@ class Vendedor: public Usuario{
     DTFecha nacimiento;
     string contraseña;
     string RUT;
-    set<Comentario> *comentarios;
-    set<Cliente> *clientes;
-    set<Producto> *productos;
   public:
     //getters
     string getNick();
     DTFecha getNacimiento();
     string getContraseña();
     string getRUT();
-    set<Comentario> getComentarios();
-    set<Cliente> getClientes();
-    set<Producto> getProductos();
 
     //funciones
     set<DTComentario> listarComentarios();

@@ -4,20 +4,19 @@
 #include <iostream>
 
 using namespace std;
+
 class DTFecha{
-private:
-	int dia;
-	int mes;
-	int anio;
-public:
-	DTFecha();
-	DTFecha(int,int,int);
-	string toString();
-	int getDia();
-	int getMes();
-	int getAnio();
+	private:
+		int dia;
+		int mes;
+		int anio;
+	public:
+		DTFecha();
+		DTFecha(int,int,int);
+		string toString();
+		int getDia();
+		int getMes();
+		int getAnio();
 };
-
-
 
 #endif

@@ -4,8 +4,6 @@
 #include <iostream>
 
 using namespace std;
-enum class DTCategoria{ Ropa, Electrodomestico, Otros
-};
-
+enum class DTCategoria{Ropa, Electrodomestico, Otros};
 
 #endif

@@ -4,14 +4,13 @@
 using namespace std;
 
 #include <iostream>
-#include "DTCategoria.h"
 
 class DTProducto{
   private:
 	  float precio;
 	  int stock;
-    string descripcion;
-    DTCategoria categoria;
+    string desc;
+    string categoria;
     string vendedor;
 };
 
