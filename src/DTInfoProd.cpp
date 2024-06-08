@@ -23,19 +23,19 @@ float DTInfoProd::getPrecio(){
     return precio;
 }
 
-int DTFeDTInfoProdcha::getStock(){
+int DTInfoProd::getStock(){
     return stock;
 }
 
-string DTFeDTInfoProdcha::getDesc(){
+string DTInfoProd::getDesc(){
     return desc;
 }
 
-string DTFeDTInfoProdcha::getCategoria(){
+string DTInfoProd::getCategoria(){
     return categoria;
 }
 
-string DTFeDTInfoProdcha::getVendedor(){
+string DTInfoProd::getVendedor(){
     return vendedor;
 }
 

@@ -12,6 +12,13 @@ class DTProducto{
     string desc;
     string categoria;
     string vendedor;
+  public:
+    DTProducto(float, int, string,string,string);
+    float getPrecio();
+	  int getStock();
+    string getDesc();
+    string getCategoria();
+    string getVendedor();
 };
 
 #endif
