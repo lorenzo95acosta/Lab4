@@ -10,6 +10,12 @@ class DTComentario{
 		int id;
 		string texto;
 		DTFecha fecha;
+public:
+	DTComentario();
+	DTComentario(int,string,DTFecha);
+	int getId();
+	int getTexto();
+	int getFecha();
 };
 
 #endif
