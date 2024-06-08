@@ -4,10 +4,10 @@
 
 using namespace std;
 
-DTCompra(monto, f, productos){
-    montoFinal = monto;
-    fecha = f;
-    infoProd = productos;
+DTCompra(float _montoFinal, DTFecha _fecha, infoProd * _infoProd){
+    montoFinal = _montoFinal;
+    fecha = _fecha;
+    infoProd = _infoProd;
 }
 
 float DTCompra::getMontoFinal(){

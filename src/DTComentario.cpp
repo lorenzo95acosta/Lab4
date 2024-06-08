@@ -10,10 +10,10 @@ DTComentario::DTComentario(){
     fecha = null;
 }
 
-DTComentario::DTComentario(i,t,f){
-    id = i;
-    texto = t;
-    fecha = f;
+DTComentario::DTComentario(int _id, string _texto, DTFecha _fecha){
+    id = _id;
+    texto = _texto;
+    fecha = _fecha;
 }
 
 int DTComentario::getId(){

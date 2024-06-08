@@ -11,10 +11,10 @@ DTCliente::DTCliente(){
     notificacion = null;
 }
 
-DTCliente::DTCliente(d,c,n){
-    direccion = d;
-    ciudad = c;
-    notificacion = n;
+DTCliente::DTCliente(string _direccion, string _ciudad, DTNotificacion _notificacion){
+    direccion = _direccion;
+    ciudad = _ciudad;
+    notificacion = _notificacion;
 }
 
 string DTCliente::getDireccion(){
