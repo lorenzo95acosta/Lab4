@@ -10,7 +10,7 @@ using namespace std;
 DTCliente::DTCliente(string _direccion, string _ciudad, DTNotificacion _notificacion){
     direccion = _direccion;
     ciudad = _ciudad;
-    notificacion = _notificacion;
+    notification = _notificacion;
 }
 
 string DTCliente::getDireccion(){

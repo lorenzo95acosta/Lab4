@@ -9,6 +9,10 @@ class listaPares{
   private:
     string cliente;
     DTFecha fechaCompra;
+  public:
+    listaPares(string, DTFecha);
+    string getCliente();
+    DTFecha getFecha();
 };
 
 #endif

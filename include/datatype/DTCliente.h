@@ -2,8 +2,8 @@
 #define _DTCLIENTE_H_
 using namespace std;
 
-include "DTUsuario.h"
-include "DTNotificacion.h"
+#include "DTUsuario.h"
+#include "DTNotificacion.h"
 
 class DTCliente : public DTUsuario{
 private:

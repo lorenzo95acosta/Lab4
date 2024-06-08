@@ -16,7 +16,6 @@ public:
 	string getPromocionNombre();
 	string getProducto();
 	void mostrar();
-
 };
 
 

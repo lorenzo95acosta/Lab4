@@ -1,4 +1,5 @@
 #include "../include/datatype/DTFecha.h"
+#include "../include/datatype/DTCompra.h"
 #include <iostream>
 #include <string>
 

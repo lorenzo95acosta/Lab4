@@ -12,7 +12,7 @@ class DTCompra{
 	  float montoFinal;
 	  DTFecha fecha;
     set<DTInfoProd> infoProd;
-  public
+  public:
     DTCompra(float,DTFecha, *infoProd);
     float getMontoFinal();
     DTFecha getFecha();

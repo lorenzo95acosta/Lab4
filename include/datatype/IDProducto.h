@@ -9,6 +9,10 @@ class IDProducto{
   private:
 	  string codigo;
 	  string nombre;
+	public:
+		IDProducto(string, string);
+		string getCodigo();
+		string getNombre();
 };
 
 #endif
