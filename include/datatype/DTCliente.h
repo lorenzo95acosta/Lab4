@@ -10,7 +10,7 @@ private:
 	string direccion;
     string ciudad;
 public:
-	DTCliente(string, string, DTFecha, string, string, DTNotificacion);
+	DTCliente(string, string, DTFecha, string, string);
 	string getDireccion();
 	string getCiudad();
 };
