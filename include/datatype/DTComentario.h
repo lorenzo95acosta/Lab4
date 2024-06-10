@@ -13,8 +13,8 @@ class DTComentario{
 public:
 	DTComentario(int,string,DTFecha);
 	int getId();
-	int getTexto();
-	int getFecha();
+	string getTexto();
+	DTFecha getFecha();
 };
 
 #endif
