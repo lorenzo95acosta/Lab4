@@ -21,6 +21,7 @@ class DTInfoProd{
     string getDesc();
     string getCategoria();
     string getVendedor();
+    void mostrar();
 };
 
 #endif
