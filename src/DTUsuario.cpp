@@ -23,23 +23,23 @@ string DTUsuario::getNacimiento(){
   return toString(nacimiento);
 }
 
-DTCliente::DTCliente(string nick, string contraseña, DTFecha nacimiento, string direccion, string ciudad): DTUsuario(nick, contraseña, nacimiento){
-  direccion = direccion;
-  ciudad = ciudad;
-}
+// DTCliente::DTCliente(string nick, string contraseña, DTFecha nacimiento, string direccion, string ciudad): DTUsuario(nick, contraseña, nacimiento){
+//   direccion = direccion;
+//   ciudad = ciudad;
+// }
 
-string DTCliente::getCiudad(){
-  return ciudad;
-}
+// string DTCliente::getCiudad(){
+//   return ciudad;
+// }
 
-string DTCliente::getDireccion(){
-  return direccion;
-}
+// string DTCliente::getDireccion(){
+//   return direccion;
+// }
 
-DTVendedor::DTVendedor(string nick, string contraseña, DTFecha nacimiento, string RUT): DTUsuario(nick, contraseña. nacimiento){
-  RUT = RUT;
-}
+// DTVendedor::DTVendedor(string nick, string contraseña, DTFecha nacimiento, string RUT): DTUsuario(nick, contraseña. nacimiento){
+//   RUT = RUT;
+// }
 
-string DTVendedor::getRUT(){
-  return RUT;
-}
+// string DTVendedor::getRUT(){
+//   return RUT;
+// }

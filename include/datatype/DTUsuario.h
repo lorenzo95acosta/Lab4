@@ -17,22 +17,22 @@ class DTUsuario{
 		virtual DTFecha getNacimiento();
 };
 
-class DTCliente: public DTUsuario{
-	private:
-		string direccion;
-		string ciudad;
-	public:
-		DTCliente(string, string, DTFecha, string, string);
-		string getDireccion();
-		string getCiudad();
-};
+// class DTCliente: public DTUsuario{
+// 	private:
+// 		string direccion;
+// 		string ciudad;
+// 	public:
+// 		DTCliente(string, string, DTFecha, string, string);
+// 		string getDireccion();
+// 		string getCiudad();
+// };
 
-class DTVendedor: public DTUsuario{
-	private:
-		string RUT;
-	public:
-		DTVendedor(string, string, DTFecha, string);
-		string getRUT();
-};
+// class DTVendedor: public DTUsuario{
+// 	private:
+// 		string RUT;
+// 	public:
+// 		DTVendedor(string, string, DTFecha, string);
+// 		string getRUT();
+// };
 
 #endif
