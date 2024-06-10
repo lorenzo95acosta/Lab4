@@ -14,6 +14,6 @@ string listaPares::getCliente(){
   return cliente;
 }
 
-string listaPares::getFecha(){
-  return toString(fechaCompra);
+DTFecha listaPares::getFecha(){
+  return fechaCompra;
 }

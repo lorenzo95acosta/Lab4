@@ -19,8 +19,8 @@ string DTUsuario::getContraseña(){
   return contraseña;
 }
 
-string DTUsuario::getNacimiento(){
-  return toString(nacimiento);
+DTFecha DTUsuario::getNacimiento(){
+  return nacimiento;
 }
 
 // DTCliente::DTCliente(string nick, string contraseña, DTFecha nacimiento, string direccion, string ciudad): DTUsuario(nick, contraseña, nacimiento){

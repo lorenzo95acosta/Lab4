@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 #include "include/class/usuario.h"
 #include "include/class/cliente.h"
 #include "include/class/vendedor.h"
@@ -18,6 +20,7 @@ using namespace std;
 //Se agregan funciones para realizar los casos de prueba en el main
 #define MAX_PALABRA 32
 #define MAX_LINEA 256
+#define cmd_es(nom_comando, cmd) (0 == strcmp(nom_comando, cmd))
 
 char restoLinea[MAX_LINEA + 1];
 char cmd[MAX_PALABRA];
@@ -39,6 +42,10 @@ void main_eliminarSuscripcion();
 
 
 void leerChars(char* cs);
+void leerRestoLinea(char* cs);
+
+
+void leerRestoLinea(char* cs) { scanf("%[^\n]", cs); }
 
 void main_altaUsuario(){
 	cout<<"altaUsuario"<<endl;
@@ -97,9 +104,6 @@ void main_eliminarSuscripcion(){
 
 
 int main(){
-	DTFecha  f =  DTFecha(4,6,24);
-	DTFecha  f2 =  DTFecha(5,6,24);
-
 ///////////////////////////////////////////////////////
 //Prueba Menu interactivo
 	int cont_comandos = 0;
@@ -150,8 +154,8 @@ int main(){
 		} else if (cmd_es("expedienteUsuario", cmd)) {
             main_expedienteUsuario();
 
-		} else if (cmd_es("suscribirNotificacison", cmd)) {
-            main_suscribirNotificacison();
+		} else if (cmd_es("suscribirNotificacion", cmd)) {
+            main_suscribirNotificacion();
 
 		} else if (cmd_es("consultaNotificacion", cmd)) {
             main_consultaNotificacion();
@@ -163,6 +167,10 @@ int main(){
 	}
 
 ///////////////////////////////////////////////////////
+
+	
+	// DTFecha  f =  DTFecha(4,6,24);
+	// DTFecha  f2 =  DTFecha(5,6,24);
 
 	// // Productos [NombreProducto,Descripcion,Categoria,Precio,Stock,Codigo,TienePromocion?]
 	// cout<<"Cracion de Productos"<<endl;

@@ -17,7 +17,7 @@ public:
 	vector<Cliente*> listaSuscriptores;
 	void agregarSuscriptor(Cliente*);
 	void listarSuscriptores();
-	void eliminarSuscriptor(Cliente*);
+	//void eliminarSuscriptor(Cliente*);
 
 };
 
