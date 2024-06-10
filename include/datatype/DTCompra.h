@@ -13,7 +13,7 @@ class DTCompra{
 	  DTFecha fecha;
     set<DTInfoProd> infoProd;
   public:
-    DTCompra(float,DTFecha,DTInfoProd);
+    DTCompra(float,DTFecha,set<DTInfoProd>);
     float getMontoFinal();
     DTFecha getFecha();
     void listarProductosEnCompra();
