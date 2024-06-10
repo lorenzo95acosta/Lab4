@@ -9,13 +9,10 @@ class DTCliente : public DTUsuario{
 private:
 	string direccion;
     string ciudad;
-    DTNotificacion notification;
 public:
-	DTCliente(string,string,DTNotificacion);
+	DTCliente(string, string, DTFecha, string, string, DTNotificacion);
 	string getDireccion();
 	string getCiudad();
-	DTNotificacion getNotificacion();
-
 };
 
 #endif
