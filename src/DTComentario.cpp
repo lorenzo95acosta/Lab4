@@ -4,12 +4,6 @@
 
 using namespace std;
 
-DTComentario::DTComentario(){
-    id = -1;
-    texto = "";
-    fecha = null;
-}
-
 DTComentario::DTComentario(int _id, string _texto, DTFecha _fecha){
     id = _id;
     texto = _texto;
