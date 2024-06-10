@@ -5,7 +5,7 @@
 
 using namespace std;
 
-DTCompra(float _montoFinal, DTFecha _fecha, infoProd * _infoProd){
+DTCompra::DTCompra(float _montoFinal, DTFecha _fecha, DTInfoProd _infoProd){
     montoFinal = _montoFinal;
     fecha = _fecha;
     infoProd = _infoProd;
@@ -20,7 +20,7 @@ DTFecha DTCompra::getFecha(){
 }
 
 void DTCompra::listarProductosEnCompra(){
-    for(productos * productosEnCompra: infoProd){
+    for(productos* productosEnCompra : infoProd){
 		productosEnCompra->mostrar();
 	}
 }

@@ -16,7 +16,7 @@ class DTInfoProd{
   public:
     DTInfoProd(int, float, int, string,string,string);
     int getCodigo();
-	  float precio;
+	  float getPrecio();
 	  int getStock();
     string getDesc();
     string getCategoria();
