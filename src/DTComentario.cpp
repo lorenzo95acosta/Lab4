@@ -13,9 +13,9 @@ DTComentario::DTComentario(int _id, string _texto, DTFecha _fecha){
 int DTComentario::getId(){
     return id;
 }
-int DTComentario::getTexto(){
+string DTComentario::getTexto(){
     return texto;
 }
-int DTComentario::getFecha(){
+DTFecha DTComentario::getFecha(){
     return fecha;
 }
