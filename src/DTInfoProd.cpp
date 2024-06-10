@@ -5,12 +5,12 @@
 using namespace std;
 
 
-DTInfoProd::DTInfoProd(string _nombre, int _codigo, float _precio, int _stock, string _desc, string _categoria,string _vendedor){
+DTInfoProd::DTInfoProd(string _nombre, int _codigo, float _precio, int _stock, string _descripcion, string _categoria,string _vendedor){
 	nombre = _nombre;
     codigo = _codigo;
     precio = _precio;
     stock = _stock;
-    desc = _desc;
+    descripcion = _descripcion;
     categoria = _categoria;
     vendedor = _vendedor;
 }
@@ -31,8 +31,8 @@ int DTInfoProd::getStock(){
     return stock;
 }
 
-string DTInfoProd::getDesc(){
-    return desc;
+string DTInfoProd::getDescripcion(){
+    return descripcion;
 }
 
 string DTInfoProd::getCategoria(){

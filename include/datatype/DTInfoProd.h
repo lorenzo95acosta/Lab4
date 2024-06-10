@@ -7,18 +7,20 @@ using namespace std;
 
 class DTInfoProd{
   private:
+    string nombre;
     int codigo;
 	  float precio;
 	  int stock;
-    string desc;
+    string descripcion;
     string categoria;
     string vendedor;
   public:
-    DTInfoProd(int, float, int, string,string,string);
+    DTInfoProd(string, int, float, int, string,string,string);
+    string getNombre();
     int getCodigo();
 	  float getPrecio();
 	  int getStock();
-    string getDesc();
+    string getDescripcion();
     string getCategoria();
     string getVendedor();
     void mostrar();

@@ -14,8 +14,8 @@ string DTInfoUsuarios::getNickname(){
   return nickname;
 }
 
-string DTInfoUsuarios::getNacimiento(){
-  return toString(nacimiento);
+DTFecha DTInfoUsuarios::getNacimiento(){
+  return nacimiento;
 }
 
 DTInfoCliente::DTInfoCliente(string nick, DTFecha nacimiento, string direccion, string ciudad): DTInfoUsuarios(nick, nacimiento){
@@ -35,6 +35,6 @@ DTInfoVendedor::DTInfoVendedor(string nick, DTFecha nacimiento, string RUT): DTI
   RUT = RUT;
 }
 
-string DTInfoVendedor::DTInfoVendedor(){
+string DTInfoVendedor::getRUT(){
   return RUT;
 }
