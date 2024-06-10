@@ -46,6 +46,8 @@ void leerRestoLinea(char* cs);
 
 
 void leerRestoLinea(char* cs) { scanf("%[^\n]", cs); }
+void leerChars(char* cs) { scanf("%s", cs); }
+
 
 void main_altaUsuario(){
 	cout<<"altaUsuario"<<endl;
@@ -112,6 +114,8 @@ int main(){
     while (seguir){
 		cont_comandos++;
         printf("%u>", cont_comandos);
+
+		leerChars(cmd);
 
 		if (cmd_es("Fin", cmd)) {  // Termina el programa
             seguir = false;
