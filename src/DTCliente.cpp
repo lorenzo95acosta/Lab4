@@ -7,7 +7,7 @@
 
 using namespace std;
 
-DTCliente::DTCliente(string _direccion, string _ciudad, DTNotificacion _notificacion): DTUsuario(nick, contraseña. nacimiento){
+DTCliente::DTCliente(string _direccion, string _ciudad, DTNotificacion _notificacion): DTUsuario(nick, contraseña, nacimiento){
     direccion = _direccion;
     ciudad = _ciudad;
     notification = _notificacion;
